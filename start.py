@@ -27,3 +27,23 @@ def nested_func(num):
     func_in_func(num + 421)
 
 nested_func(10000)
+
+#int형 list로 반환
+
+def change_func(x : int) -> list :
+    y1 = x * 100
+    y2 = x * 200
+    y3 = x * 300
+    return [y1 ,y2 ,y3]
+    
+print(change_func(5))
+
+def chang_func2 (x : float) -> int :
+    y1 = x * 10.2
+    y2 = x * 20.5
+    return (y1, y2)
+
+print(chang_func2(1.3))
+
+# 정수형으로 왜 안바뀌었을까,,
+    
